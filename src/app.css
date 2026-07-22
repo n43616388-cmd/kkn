@@ -1,0 +1,201 @@
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8f9fa;
+overflow-x:hidden;
+}
+
+/* Navbar */
+
+.navbar{
+background:rgba(255,255,255,.95);
+backdrop-filter:blur(10px);
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.navbar-brand{
+font-weight:700;
+font-size:28px;
+color:#5A32EA;
+}
+
+.nav-link{
+font-weight:500;
+margin-left:20px;
+transition:.3s;
+}
+
+.nav-link:hover{
+color:#5A32EA;
+}
+
+/* Hero */
+
+.hero{
+padding:120px 0;
+background:linear-gradient(135deg,#5A32EA,#8E54E9);
+color:#fff;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:"";
+position:absolute;
+width:600px;
+height:600px;
+background:rgba(255,255,255,.1);
+border-radius:50%;
+top:-250px;
+right:-180px;
+}
+
+.hero h1{
+font-size:55px;
+font-weight:700;
+}
+
+.hero p{
+font-size:18px;
+opacity:.9;
+margin:25px 0;
+}
+
+.btn-custom{
+padding:14px 35px;
+border-radius:40px;
+font-weight:600;
+transition:.4s;
+}
+
+.btn-custom:hover{
+transform:translateY(-5px);
+}
+
+.hero img{
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+/* Features */
+
+.features{
+padding:100px 0;
+}
+
+.section-title{
+font-weight:700;
+margin-bottom:50px;
+}
+
+.feature-card{
+background:#fff;
+padding:35px;
+border-radius:20px;
+transition:.4s;
+box-shadow:0 15px 35px rgba(0,0,0,.06);
+height:100%;
+}
+
+.feature-card:hover{
+transform:translateY(-10px);
+}
+
+.feature-card i{
+font-size:50px;
+color:#5A32EA;
+margin-bottom:20px;
+}
+
+/* About */
+
+.about{
+padding:100px 0;
+background:#fff;
+}
+
+.about img{
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* CTA */
+
+.cta{
+padding:90px 0;
+background:linear-gradient(135deg,#8E54E9,#5A32EA);
+color:#fff;
+text-align:center;
+}
+
+.cta h2{
+font-weight:700;
+margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+padding:30px;
+background:#222;
+color:#ddd;
+text-align:center;
+}
+
+.social i{
+font-size:24px;
+margin:0 10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.social i:hover{
+color:#8E54E9;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+padding:80px 0;
+}
+
+.hero h1{
+font-size:42px;
+}
+
+.hero img{
+margin-top:40px;
+width:90%;
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.section-title{
+font-size:28px;
+}
+
+}
+
